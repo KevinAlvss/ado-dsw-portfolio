@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: rgb(98, 158, 226);
+        display: flex;
+        justify-content: center;
+      }
+
+      #container {
+        margin: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(86, 140, 202);
+        width: 40vh;
+        height: 45vh;
+      }
+
+      p {
+        margin-top: 0.9vh;
+        text-decoration: none;
+        color: black;
+      }
+
+      img {
+        height: 20vh;
+        width: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://media.licdn.com/dms/image/D4D03AQHueILLnBw4zQ/profile-displayphoto-shrink_800_800/0/1693592534492?e=1701907200&v=beta&t=WaLjYypDlVLD44FsR8LqEx6ShcEYUwJ4NN4f7YonA7o"
+        alt=""
+      />
+      <h1 th:text="${Nome}"></h1>
+      <p th:text="${Tel}"></p>
+      <p th:text="${Email}"></p>
+      <p th:text="${DataNasc}"></p>
+      <a href="https://github.com/KevinAlvss"><p th:text="${Github}"></p></a>
+      <a href="https://www.linkedin.com/in/kevin-alves-pereira/"
+        ><p th:text="${Linkedin}"></p
+      ></a>
+    </div>
+  </body>
+</html>
